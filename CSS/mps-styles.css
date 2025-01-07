@@ -1,0 +1,100 @@
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cardHover {
+    from {
+        transform: scale(1);
+        background-color: white;
+    }
+    to {
+        transform: scale(1.05);
+        background-color: #ffcccc;
+    }
+}
+
+.mps-section {
+    background: linear-gradient(to right, #ff4d4d, #ff6666);
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mps-section .header-container {
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.mps-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: slideInFromLeft 1.5s ease-in-out;
+    color: white;
+}
+
+.mps-section .description-container {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.mps-section p {
+    font-size: 1rem;
+    max-width: 400px;
+    text-align: right;
+    margin: 0;
+}
+
+.mps-cards {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.mps-card {
+    background: white;
+    color: #003366;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: forwards;
+}
+
+.mps-card:hover {
+    animation: cardHover 0.3s forwards;
+}
+
+.mps-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.mps-card p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.mps-card i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff4d4d;
+}

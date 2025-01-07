@@ -1,0 +1,449 @@
+/* Services Page Styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background: linear-gradient(to right, #003366, #00509e);
+  color: white;
+  padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffa500;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-section h2 {
+  font-size: 2.5em;
+  margin: 0 0 20px;
+  animation: fadeInFromTop 1.5s ease-out forwards;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin: 10px 0 20px;
+  animation: fadeInFromTop 1.5s ease-out 0.5s forwards;
+}
+
+.hero-section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  animation: fadeInFromTop 1.5s ease-out 1s forwards;
+}
+
+.hero-section a:hover {
+  background-color: #ff7700;
+}
+
+.services-section {
+  padding: 50px 20px;
+  background-color: #e0e0e0;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+  font-size: 3em;
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 1.5em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1em;
+  color: #555555;
+}
+
+/* What We Offer Section */
+.offer-section {
+  padding: 50px 20px;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+}
+
+.offer-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.offer-section hr {
+  width: 50px;
+  height: 2px;
+  margin: 10px auto 20px;
+  background-color: #ffa500;
+  border: none;
+}
+
+.offer-section p {
+  font-size: 1.3em;
+  margin: 20px auto 30px;
+  max-width: 600px;
+  color: #e0e0e0;
+}
+
+.offer-section .btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.offer-section .btn-secondary:hover {
+  background-color: #ff7700;
+}
+
+/* AFTER-SALES MAINTENANCE CONTRACT SECTION CSS */
+
+.maintenance-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.maintenance-section h2 {
+  font-size: 2.5rem;
+  color: #2b579a;
+  margin-bottom: 20px;
+}
+
+.maintenance-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.maintenance-plan {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maintenance-plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.maintenance-plan h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2b579a;
+}
+
+.maintenance-plan.standard {
+  background-color: #ffe4e1;
+  border-color: #ff6347;
+}
+
+.maintenance-plan.premium {
+  background-color: #e8f5e9;
+  border-color: #66bb6a;
+}
+
+.maintenance-plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.maintenance-plan ul li {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maintenance-plan ul li i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.maintenance-plan ul li i.fa-check {
+  color: #28a745;
+}
+
+.maintenance-plan ul li i.fa-times {
+  color: #dc3545;
+}
+
+.maintenance-contact {
+  margin-top: 30px;
+}
+
+.maintenance-contact h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.maintenance-contact .contact-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.maintenance-contact .contact-link:hover {
+  background-color: #0056b3;
+}
+
+
+/* Footer */
+.footer {
+  background: #003366;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-info, .footer-links, .footer-extra, .footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #ffcc00;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background: #ffaa00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Animations */
+
+@keyframes fadeInFromTop {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+[data-scroll="true"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-scroll-visible="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .services-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header .container {
+      flex-direction: column;
+  }
+
+  header nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header nav ul li {
+      margin: 5px 0;
+  }
+}
+

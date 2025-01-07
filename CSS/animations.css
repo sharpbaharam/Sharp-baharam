@@ -1,0 +1,35 @@
+/* Hero section animation */
+.hero-content h2 {
+  animation: slideInFromRight 2s ease-in forwards;
+  color: white;
+}
+
+.hero-content p {
+  animation: slideInFromRight 2s ease-in forwards, fadeOutToLeft 3s ease-in 5s forwards;
+  color: white;
+}
+
+
+/* Fade-in animation */
+@keyframes slideInFromRight {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply fade-in animation to elements */
+.fading-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+/* Trigger animation when the element is in the viewport */
+.fading-content.visible {
+  animation: fadeIn 1s ease-out forwards;
+}

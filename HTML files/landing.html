@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharp Baharam Global Concept</title>
+    <link rel="stylesheet" href="/CSS/landing-styles.css">
+    <link rel="stylesheet" href="/CSS/mps-styles.css">
+    <link href="/CSS/sharp-baharam-styles.css" rel="stylesheet">
+    <link href="/CSS/animations.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOutToLeft {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+        }
+
+        .hero-content h2 {
+            animation: slideInFromRight 1s ease-in forwards;
+            color: white;
+        }
+
+        .hero-content p {
+            animation: slideInFromRight 1s ease-in forwards, fadeOutToLeft 2s ease-in 2s forwards;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header" style="background: linear-gradient(to right, #003366, #00509e);">
+        <div class="container">
+            <div class="logo">
+                <img src="/Media/Group 2.png" alt="Sharp Baharam">
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="/HTML files/index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/HTML files/index4.html">Products</a></li>
+                    <li><a href="/HTML files/index 2.html">Services</a></li>
+                    <li><a href="/HTML files/index3.html">Contact Us</a></li>
+                    <li><a href="/HTML files/index3.html" class="btn-support">Support Centre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="/Media/hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Smart Business Partner</h2>
+            <p>Improve the way you work with multifunctional office solutions.</p>
+            <a href="/HTML files/index4.html" class="btn-primary">Browse Products</a>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about-section fading-content">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Sharp Baharam Global Concept specializes in providing high-quality office equipment such as printers, copiers, and air conditioners. Our goal is to enhance workplace productivity with reliable and efficient solutions.</p>
+        </div>
+    </section>
+
+    <!-- MANAGED PRINT SERVICES SECTION -->
+    <section class="mps-section fading-content">
+        <div class="header-container">
+            <h2>MANAGED PRINT SERVICES</h2>
+            <div class="description-container">
+                <p>Managed Print Services (MPS) optimize your print environment, reduce costs, and enhance productivity. Our solutions ensure security and environmental sustainability.</p>
+            </div>
+        </div>
+        <div class="mps-cards">
+            <div class="mps-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Smart Monitoring</h3>
+                <p>Regular Routine Checks on MFPs</p>
+            </div>
+            <div class="mps-card">
+                <i class="fas fa-tools"></i>
+                <h3>Parts Replacement</h3>
+                <p>Priority part replacement guaranteed.</p>
+            </div>
+            <div class="mps-card">
+                <i class="fas fa-headset"></i>
+                <h3>Express Support</h3>
+                <p>Quick response to online & offline queries</p>
+            </div>
+            <div class="mps-card">
+                <i class="fas fa-ban"></i>
+                <h3>Stop-Gap Machine</h3>
+                <p>A Standby MFP ready for use when MFP experiences downtime</p>
+            </div>
+            <div class="mps-card">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Cost Effective</h3>
+                <p>Save Money, Spend less</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="products-section fading-content">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                   <a href="/HTML files/index4.html"><img src="/Media/prtr 1.jpeg" alt="Printer"></a>
+                    <h3>Multifunction Printer</h3>
+                </div>
+                <div class="product-item">
+                    <a href="/HTML files/index4.html"><img src="/Media/prtr 2.jpeg" alt="Copier"></a>
+                    <h3>Advanced Copier</h3>
+                </div>
+                <div class="product-item">
+                    <a href="/HTML files/index4.html"><img src="/Media/image3.jpeg" alt="Air Conditioner"></a>
+                    <h3>Efficient Air Conditioner</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer fading-content">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Contact Us</h4>
+                <p>Post Office Shopping Complex Area 10, Abuja, FCT</p>
+                <p>Phone: 0809 305 4346</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/HTML files/index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/HTML files/index4.html">Products</a></li>
+                    <li><a href="/HTML files/index 2.html">Services</a></li>
+                    <li><a href="/HTML files/index3.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-extra">
+                <h4>Newsletter Signup</h4>
+                <p>Stay updated with our latest products and offers. Sign up for our newsletter!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/Js/fade-in-script.js" defer></script>
+</body>
+</html>

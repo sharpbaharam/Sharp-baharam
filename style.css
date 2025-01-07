@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default Styles */
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #1e3a8a; /* Blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loader-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #1e40af; /* Darker blue for loader */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite, pulse 2s infinite;
+}
+
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #1e40af;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin-reverse 2s linear infinite;
+}
+
+.brand-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 5px;
+  animation: fadeIn 2s ease-in-out, colorCycle 3s infinite alternate;
+  background: linear-gradient(45deg, #1e90ff, #ff9900, #ff4500, #1e40af);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Color gradient cycling animation */
+@keyframes colorCycle {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+
+/* Keyframe animation for spinning loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+/* Keyframe animation for fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Keyframe animation for scaleUp */
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Pulsating animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(30, 64, 175, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 30px 15px rgba(30, 64, 175, 0);
+  }
+}
+
+/* Animations for content appearance */
+@keyframes fadeContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .loader {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #1e40af;
+  }
+
+  .brand-name {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+
+  .content {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loader {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #1e40af;
+  }
+
+  .brand-name {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .content {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+}

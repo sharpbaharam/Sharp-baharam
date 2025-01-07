@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/CSS/contact_us.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOutToLeft {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+        }
+        .hero-content p {
+            animation: slideInFromRight 3s ease-in forwards, fadeOutToLeft 3s ease-in 6s forwards;
+            
+        }
+    </style>
+    <header>
+        <div class="container">
+            <img src="/Media/Group 2.png" alt="Sharp Baharam">
+            <nav>
+                <ul>
+                    <li><a href="/HTML files/index.html">Home</a></li>
+                    <li><a href="#contact-form">Contact Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="/Media/hero-video-s.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <p>We are here to assist you. Reach out to us via the details below or fill out the form for any inquiries.</p>
+            <a href="#contact-form"><h2>Contact Us</h2></a>
+        </div>        
+    </section>
+
+    <section class="contact-info">
+        <div class="info-container">
+            <div class="info-card zoom-in">
+                <h3>Head Office</h3>
+                <p><i class="fas fa-map-marker-alt"></i> POST OFFICE SHOPPING COMPLEX AREA 10, Abuja, Federal Capital Territory, Nigeria</p>
+                <p><i class="fas fa-phone"></i> +234 809 305 4346</p>
+                <p><i class="fas fa-envelope"></i> info@sharpbaharam.com</p>
+            </div>
+            <div class="info-card zoom-in">
+                <h3>Second Office</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Durodola Plaza, 69 Egbe Road, Ejigbo opposite Fidelity Bank, After Powerline Bus Stop.</p>
+                <p><i class="fas fa-phone"></i> +234 809 305 4346</p>
+                <p><i class="fas fa-envelope"></i> info@sharpbaharam.com</p>
+            </div>
+            <div class="info-card zoom-in">
+                <h3>Port Harcourt Office</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 1B Kingslop Street, ALcon Road, Woji, Port Harcourt</p>
+                <p><i class="fas fa-phone"></i> +234 809 305 4346</p>
+                <p><i class="fas fa-envelope"></i> phc@sharpbaharam.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section" id="contact-form">
+        <h2>Get In Touch</h2>
+        <form class="contact-form" action="/submit_contact_form" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="map-section">
+        <h2>Locate Us</h2>
+        <div class="map-container">
+            <div class="map">
+                <h3>Abuja Office</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.987946685628!2d7.478420674097728!3d9.04341769104888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9dc09a454cd%3A0x3131d09c81e8cf08!2sPost%20Office%20Shopping%20Complex%20Area%2010%2C%20Abuja!5e0!3m2!1sen!2sng!4v1697980000000!5m2!1sen!2sng"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="map">
+                <h3>Port Harcourt Office</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.0637006305423!2d7.048420674097728!3d4.84341769104888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9dc09a454cd%3A0x3131d09c81e8cf08!2s1B%20Kingslop%20Street%2C%20Alcon%20Road%2C%20Woji%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1697980000000!5m2!1sen!2sng"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer fading-content">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Contact Us</h4>
+                <p>Post Office Shopping Complex Area 10, Abuja, FCT</p>
+                <p>Phone: 0809 305 4346</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/HTML files/Products.html">Products</a></li>
+                    <li><a href="/HTML files/index 2.html">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-extra">
+                <h4>Newsletter Signup</h4>
+                <p>Stay updated with our latest products and offers. Sign up for our newsletter!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
